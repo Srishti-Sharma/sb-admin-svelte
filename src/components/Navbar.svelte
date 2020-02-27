@@ -31,7 +31,7 @@
       <InputGroup>
         <Input type="search" name="search" placeholder="Search for..." />
         <InputGroupAddon addonType={'append'}>
-          <Button color="primary">
+          <Button color="primary" on:click>
             <i class="fas fa-search" />
           </Button>
         </InputGroupAddon>
