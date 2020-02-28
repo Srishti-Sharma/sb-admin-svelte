@@ -22,6 +22,10 @@
   export let segment;
   export let color;
   export let title;
+
+  function searchHandle() {
+    event.preventDefault();
+  }
 </script>
 
 <Navbar class="sb-topnav navbar-expand" {color} dark expand="md">
@@ -31,7 +35,7 @@
       <InputGroup>
         <Input type="search" name="search" placeholder="Search for..." />
         <InputGroupAddon addonType={'append'}>
-          <Button color="primary" on:click>
+          <Button color="primary" on:click={searchHandle}>
             <i class="fas fa-search" />
           </Button>
         </InputGroupAddon>
